@@ -49,6 +49,8 @@ VERSION            := 1.6.0b1
 DEMO_SUFFIX        :=
 OMD_VERSION        := $(VERSION).$(EDITION_SHORT)$(DEMO_SUFFIX)
 
+PKG_VERSION := $(subst .${EDITION_SHORT},,${OMD_VERSION})
+
 SHELL              := /bin/bash
 # TODO: Be more strict - Add this:
 #SHELL              := /bin/bash -e -o pipefail
